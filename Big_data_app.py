@@ -93,8 +93,8 @@ if selected == "Sentiment and Mental Health Analysis":
             with st.spinner("Analyzing ..."):
                 try:
                     sentiment_label, sentiment_score = calculate_sentiment(user_input)
-
-                    st.write("### Sentiment Analysis Result:")
+                    st.write(f"**Input text:**{user_input}")
+                    st.write("### Sentiment Analysis and Mental Health Result:")
                     st.write(f"**Sentiment:** {sentiment_label}")
                     st.write(f"**Confidence Score:** {sentiment_score}")
                     processed_text = preprocess_text(user_input)
